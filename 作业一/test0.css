@@ -1,0 +1,224 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.header{
+	width:930px;
+	height:482px;
+/*	background-color: #0f0;*/
+	margin:0 auto;
+}
+.container{
+	width:930px;
+	height:285px;
+	/*background-color: red;*/
+	margin:0 auto;
+	margin-top: 15px;
+}
+.footer{
+	width:930px;
+	height:220px; 
+/*	background-color: yellow;*/
+    margin:0 auto;
+    border:1px solid grey;
+    padding-top: 15px;
+}
+.top{
+	width:930px;
+	height:102px;
+	/*background-color: blue;*/
+}
+.banner{
+	width:930px;
+	height:380px;
+	background-color: black;
+}
+.logo{
+	width:109px;
+	/*margin-top:8px;*/
+	height:102px;
+	float:left;
+	/*background-color: blue;*/
+}
+.nav{
+	width:465px;
+	height:102px;
+	float:left;
+	/*background-color: purple;*/
+}
+.search{
+	width:355px;
+	height:102px;
+	float:left;
+	/*background-color: yellow;*/
+}
+.nav ul li{
+	margin-left:10px;
+	margin-top:48px;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-image:url(images/images/sanjiao.jpg);
+	background-position:right center; 
+}
+.nav ul li{
+	list-style:none;
+	float:left;
+	padding-left: 17px;
+	padding-right: 17px;
+
+}
+.nav ul li span{
+	display:block;
+	font-size: 13px;
+	font-weight: bold;
+}
+.searchone{
+	float:left;
+	width: 400px;
+}
+.searchone a,p{
+	margin-left: 1px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	font-family: "Time New Roman",Times serif;
+	/*float:left;*/
+	font-size:8px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.searchtwo{
+	margin-top: 20px;
+	float:right;
+	margin-bottom: 10px;
+}
+.searchthree{
+	float:right;
+/*	clear:both;*/
+}
+.containerone{
+	width:303px;
+	height:285px;
+	float: left;
+	margin-right: 7px;
+	border:1px solid grey;
+}
+.containertwo{
+	width:303px;
+	height:285px;
+	float: left;
+	margin-right: 8px;
+	border:1px solid grey;
+}
+.containerthree{
+	width:303px;
+	height:285px;
+	float: left;
+	border:1px solid grey;
+}
+.ctone1{
+	width:300px;
+	height:23px; 
+	margin-top:10px;
+	margin-left:25px;
+}
+.ctone2{
+	width:300px;
+	height:128px;
+}
+.ctone3{
+	list-style-image:url(images/images/sanjiao_03.jpg)
+}
+#ctone-1{
+	width:217px;
+	font-size: 10px;
+	margin-left:38px; 
+	margin-top:12px;
+	font-family: "Time New Roman",Times serif;
+}
+#ctone-2{
+	width:217px;
+	font-size: 10px;
+	margin-left:38px; 
+	margin-top:12px;
+	font-family: "Time New Roman",Times Serif;
+}
+.cttwo1{
+	width:300px;
+	height:23px; 
+	margin-top:10px;
+	margin-left:25px;
+	
+}
+.cttwo2{
+	width:300px;
+	height:128px;
+}
+.cttwo3{
+		list-style-image:url(images/images/sanjiao_03.jpg);
+		font-size:10px;
+		margin-left: 15px;
+		margin-top: 12px;
+		font-family: "Time New Roman",Times Serif;
+}
+.cttwo3  li{
+	margin-top: 3px;
+	padding-top: 3px;
+}
+.ctthree1{
+	width:300px;
+	height:23px; 
+	margin-top:10px;
+	margin-left:25px;
+}
+.ctthree2{
+	width:300px;
+	height:128px;
+}
+.ctthree3{
+	margin-top: 12px;
+	margin-left: 25px;
+	list-style-image:url(images/images/sanjiao_03.jpg);
+}
+.picture{
+	width:930px;
+	height:40px;
+	margin:0 auto;
+	/*margin-top: 10px;
+	margin-bottom: 10px;*/
+}
+#text-input{
+	margin:14px 0;
+}
+.pic1{
+	float:left;
+	
+}
+#pic2{
+	float:right;
+	margin:14px 0;
+}
+.footer div ul{
+	float: left;
+			margin-left: 15px;
+			font-family:  "Time New Roman",	TimeS,Serif;
+			font-size: 12px;
+			margin-top: 2px;
+			margin-right: 4px;
+			margin-left: 20px;
+}
+.footer .top ul li{
+	margin-left: 20px;
+			margin-top: 2px;
+			font-family: Georgia, "Times New Roman", Times, serif;
+		    font-size:10px
+}
+.tail p{
+	width: 932px;
+			height: 60px;
+			font-family: "Times New Roman", Times, serif;
+			font-size: 13px;
+			float: left;
+			text-align: center;
+			margin:33px auto;
+			color: #547bbe;
+}
