@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+	var cat = {
+		name:"haha",
+		age:30,
+		color:"black",
+		sayName:function(){
+			console.log("我的名字是"+this.name)
+			return this;
+		},
+		eat:function(food){
+			console.log("我爱吃"+food)
+			return this;
+		}
+	}
+	// console.log(cat.name);
+	// cat.sayName()
+	cat.sayName().eat("鱼")
+	</script>
+</body>
+</html>

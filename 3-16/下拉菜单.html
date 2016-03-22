@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.box{
+		height: 50px;
+		width: 1500px;
+		background-color: #ff0;
+	}
+	.box1,.box2,.box3{
+		width:150px;
+		height:50px;
+		border:1px solid black;
+		float:left;
+	}
+	#name{
+		text-align: center;
+		color:black;
+	}
+	#age{
+		text-align: center;
+		color:black;
+	}
+	#school{
+		text-align: center;
+		color:black;
+	}
+   a{
+   	display:block;
+   	text-align: center;
+   	line-height: 50px;
+    }
+    #namelist,#agelist,#schoollist{
+    	background-color: #f00;
+
+    }
+    #namelist li{
+    	display:none;
+    	list-style: none;
+
+    }
+    #agelist li{
+		display: none;
+		list-style: none;
+    }
+    #schoollist li{
+    	display: none;
+    	list-style: none;
+    }
+	</style>
+</head>
+<body>
+	<div class="box">
+	<div class="box1">
+		<a href="" id="name">姓名</a>
+		<ul id="namelist">
+			<li>苗创业</li>
+			<li>苗宁</li>
+			<li>苗爽</li>
+			<li>苗康</li>
+		</ul>
+	</div>
+	<div class="box2">
+	 <a href="" id="age">年龄</a>
+	 <ul id="agelist">
+	 	<li>21</li>
+	 	<li>22</li>
+	 	<li>23</li>
+	 	<li>24</li>
+	 </ul>
+	</div>
+	<div class="box3">
+		<a href="" id="school">学校</a>
+		<ul id="schoollist">
+			<li>燕山大学</li>
+			<li>东北大学</li>
+			<li>北京大学</li>
+			<li>天津大学</li>
+		</ul>
+	</div>
+		
+	</div>
+	
+
+
+
+	<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+	$("#name").mouseenter(function(){
+		$("#namelist li").slideDown(1000)
+	})
+	$("#name").mouseleave(function(){
+		$("#namelist li").slideUp(1000)
+	})
+	$("#age").mouseenter(function(){
+		$("#agelist li").slideDown(1000)
+	})
+	$("#age").mouseleave(function(){
+		$("#agelist li").slideUp(1000)
+	})
+	$("#school").mouseenter(function(){
+		$("#schoollist li").slideDown(1000)
+	})
+	$("#school").mouseleave(function(){
+		$("#schoollist li").slideUp(1000)
+	})
+	</script>
+</body>
+</html>

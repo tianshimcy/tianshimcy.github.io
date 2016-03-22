@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.list{
+		width:840px;
+		height:200px;
+	/*	background-color: #ff0;*/
+	}
+	.list li{
+		list-style: none;
+		float:left;
+		width:200px;
+		height:200px;
+		margin-right: 10px;
+	
+	}
+	.list li img{
+		width:200px;
+		height:200px;
+
+	}
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li>
+			<img src="../images/8.jpg"></img>
+		</li>
+		<li>
+			<img src="../images/9.jpg"></img>
+		</li>
+		<li>
+			<img src="../images/2.jpg"></img>
+		</li>
+		<li>
+			<img src="../images/3.jpg"></img>
+		</li>
+	</ul>
+
+
+
+
+	<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+	$(".list li").mouseenter(function(){
+		$("body").append("<li class=\"space\"><img src=\"\"></li>");
+		// var x = event.pageX;
+		// var y = event.pageY;
+		// console.log(x + "," + y)
+		var src=$(this).find("img").attr("src")
+		$(".space img").attr("src",src);
+ 	})
+ 		$(".list li").mouseleave(function(){
+ 		$(".space").remove();
+ 	})
+ 		$(".list li").mousemove(function(event){
+ 		var f=event.pageX;
+ 		var g=event.pageY;
+ 		$(".space").css({
+ 			"position":"absolute",
+ 			"left":f+20,
+ 			"top":g+20
+ 		})
+ 	})
+
+	</script>
+</body>
+</html>

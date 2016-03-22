@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="tex"></input>
+	<input type="button" value="添加按钮" id="btn"></input>
+	<input type="button" value="删除按钮" id="del"></input>
+	<ul id="name">
+		<li>苗创业</li>
+		<li>苗宁</li>
+		<li>苗康</li>
+	</ul>
+
+
+	<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+	$("#btn").click(function(){
+		var  value=$("#tex").val();
+		var li = "<li>"+value+"</li>";
+		$("#name").prepend(li);
+	})
+	$("#name li").click(function(){
+		$(this).remove();
+	})
+	$("#del").click(function(){
+
+		var val = $("#tex").val();
+
+		$("#name li").each(function(index,element){
+
+			if($(element).text()==val){
+				
+				$(element).remove();
+			}
+		})
+	})	
+	</script>
+</body>
+</html>

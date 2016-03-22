@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input id="txt1" type="text" value="">+
+	<input id="txt2" type="text" value="">=
+	<input id="txt3" type="text" value="">
+	<input id="btn1" type="button" value="计算">
+	<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+	$("#btn1").click(function(){
+		var value= $("#txt1").val();
+		var num=$("#txt2").val();
+		var a=Number(value);
+		var b=Number(num);
+		var c=a+b;
+		$("#txt3").val(c);
+	})
+ </script>
+</body>
+</html>

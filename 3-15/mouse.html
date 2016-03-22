@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.box1{
+		width:100px;
+		height: 100px;
+		background-color: #f00;
+		display: none;
+	}
+	#list1{
+		list-style: none;
+		font-size: 15px;
+		height:20px;
+		width:20px;
+		float:left;
+		line-height: 20px;
+	}
+	#list2{
+		list-style: none;
+		font-size: 15px;
+		height:20px;
+		width:20px;
+		float:left;
+		line-height: 20px;
+	}
+	#list3{
+		list-style: none;
+		font-size: 15px;
+		height:20px;
+		width:20px;
+		float:left;
+		line-height: 20px;
+	}
+	</style>
+</head>
+<body>
+	<input type="button" value="姓名" id="name"></input>
+	<input type="button" value="学校" id="school"></input>
+	<input type="button" value="家庭住址" id="house"></input>
+	<div class="box1">
+		<ul>
+			<li id="list1">李华</li>
+			<li id="list2">张宁</li>
+			<li id="list3">苗创业</li>
+		</ul>
+	</div>
+
+
+
+
+
+<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+	$("#name").mouseenter(function(){$(".box1").slideDown(300);})
+	$("#name").mouseleave(function(){$(".box1").slideUp(300);})
+</script>
+</body>
+</html>

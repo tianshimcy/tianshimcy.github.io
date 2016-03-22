@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin:0px;
+		padding: 0px;
+	}
+	.box{
+		width:608px;
+		height: 50px;
+		border:1px solid #f00;
+	}
+	.box li{
+		width:150px;
+		height: 48px;
+		list-style: none;
+		float:left;
+		border:1px solid black;
+		text-align: center;
+		line-height: 50px;
+	}
+	.box1{
+		width:608px;
+		height:300px;
+		background-color: #f00;
+		display:none;
+	}
+	.box2{
+		width:608px;
+		height:300px;
+		background-color: #0ff;
+		display:none;
+	}
+	.box3{
+		width:608px;
+		height:300px;
+		background-color: #f0f;
+		display:none;
+	}
+	.box4{
+		width:608px;
+		height:300px;
+		background-color: #00f;
+		display:none;
+	}
+	.xia{
+		width:608px;
+		height:1200px;
+		/*background-color: #0ff;*/
+	}
+
+
+	a{
+		width: 150px;
+		height: 50px;
+		display:block;
+	}
+	</style>
+</head>
+<body>
+	<ul class="box">
+		<li>
+			<a href="#">女装</a>
+		</li>
+		<li>
+			<a href="#">男装</a>
+
+		</li>
+		<li>
+			<a href="#">饰品</a>
+		</li>
+		<li>
+			<a href="#">家居</a>
+		</li>
+	</ul>
+	<div class="xia">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+	</div>
+	
+
+
+	<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+	$(".box li").click(function(){
+		var num = $(this).index();
+		console.log(num)
+		$(".xia div").eq(num).show(500).siblings().hide(500);
+	
+ 		// var left = num
+		$(this).css("background-color","#ff0").siblings().css("background-color","#fff");
+ 			
+	})
+	
+	</script>
+</body>
+</html>

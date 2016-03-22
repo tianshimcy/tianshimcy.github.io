@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.box{
+		height:500px;
+		width:2000px;
+		/*border:1px solid #f00;*/
+	}
+	#list{
+		height:500px;
+		width:500px;
+		list-style: none;
+		overflow: hidden;
+
+	}
+	#pic1,#pic2,#pic3,#pic4{
+		height:500px;
+		width:500px;
+		float:left;
+	}
+	#list2 li{
+		float: left;
+		width:20px;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		border: 1px solid #f00;
+		list-style: none;
+
+	}
+
+	</style>
+</head>
+<body>
+	
+	<div class="box">
+		<ul id="list">
+			<li><img id="pic1" src="../images/8.jpg"></img></li>
+			<li><img id="pic2" src="../images/9.jpg"></img></li>
+			<li><img id="pic3" src="../images/2.jpg"></img></li>
+			<li><img id="pic4" src="../images/3.jpg"></img></li>
+		</ul>
+	</div>
+	<ul id="list2">
+		<li id="listone">1</li>
+		<li id="listtwo">2</li>
+		<li id="listthree">3</li>
+		<li id="listfour">4</li>
+	</ul>
+
+
+
+	<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+	// $("#list2 li").mouseenter(function(){
+	// 	var num = $(this).index();
+	// 	var value = num +1;
+	// 	// console.log(value);
+	// 	$("#list li img").animate({"margin-left","-500px*value"}，5000)；
+	// })
+    $("#pic1").mouseenter(function(){
+    	$("#listone").animate("margin-left","-500px")
+    })
+	</script>
+</body>
+</html>
